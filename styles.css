@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #696464; /* Light gray background */
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #8a3ab9; /* Instagram purple */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-container, .dashboard {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.dashboard-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer; /* Add cursor pointer for clickable effect */
+}
+
+.dashboard-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%; /* Rounded image */
+}
+
+.dashboard-item .info {
+    flex-grow: 1;
+}
+
+.dashboard-item .info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.dashboard-item .info p {
+    margin: 5px 0;
+    color: #333; /* Dark text */
+}
+
+.dashboard-item .info span {
+    font-size: 14px;
+    color: #666; /* Light text */
+}
+
+button {
+    background-color: #ff7e00; /* Instagram orange */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px; /* Rounded button */
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #ff931e; /* Darker orange on hover */
+}
+
+.full-review {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 9999; /* Ensure it's on top of everything */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+.full-review-content {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    max-width: 80%; /* Adjust as needed */
+}
+
+#reviewSpotImage {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    background-color: #ff7e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.review-details {
+    display: flex;
+    align-items: center;
+}
+
+.review-info {
+    flex-grow: 1;
+}
+
+.review-info p {
+    margin: 5px 0;
+    color: #333; /* Dark text */
+}
+
+.review-info p:last-child {
+    margin-bottom: 0;
+}
+
+button.close-btn {
+    background-color: #ff7e00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button.close-btn:hover {
+    background-color: #ff931e; /* Darker orange on hover */
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
